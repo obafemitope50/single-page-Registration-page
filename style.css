@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    background-image: url("bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ff7978;
+    display: flex;
+    font-family: Poppins;
+    color: #fdf9f8;
+    place-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin: 0;
+    }
+
+    main {
+    width: 75%;
+    padding: 4rem 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-flow: row wrap;
+    }
+    .section {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    }
+    .box1 {
+    width: 45%;
+    }
+    .box1 h1 {
+    padding-bottom: 2rem;
+    }
+    .box2 {
+    width: 45%;
+    align-self: flex-start;
+    }
+    .robin {
+    border-radius: 0.4rem;
+    }
+    a {
+    text-align: center;
+    text-decoration: none;
+    }
+    .box2 > a {
+    background-color: hsl(248, 32%, 49%);
+    color: inherit;
+    font-size: 1rem;
+    padding: 15px 10px;
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px rgb(219, 112, 112);
+    cursor: pointer;
+    }
+    .box2 form {
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 35px;
+    }
+    .box2 form > div {
+    margin-bottom: 20px;
+    }
+
+    .box2 form p {
+    color: hsl(246, 25%, 77%);
+    font-weight: 400;
+    text-align: center;
+    }
+    .box2 form a {
+    color: hsl(0, 97%, 36%);
+    font-weight: 200;
+    }
+    input:not(input[type="submit"]) {
+    font-size: 1rem;
+    width: 100%;
+    padding: 15px 15px 15px 26px;
+    color: rgb(29, 7, 42);
+    border: 1.7px solid rgb(233, 230, 230);
+    font-weight: 700;
+    border-radius: 5px;
+    }
+    input:not(input[type="submit"]) {
+    border-color: hsl(246, 25% 77%);
+    }
+    input[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    color: #fdf9f8;
+    padding: 15px 10px;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: #fdf9f8;
+    cursor: pointer;
+    box-shadow: 0px 0.2em rgb(93, 154, 126);
+    }
+    div.action {
+    margin-bottom: 10px !important;
+    }
+    .box2 > a > span {
+    font-size: 0.9rem;
+    }
+    .section > h1 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    }
+    .section form p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 0.7rem;
+    }
+@media only screen and (max-width: 375px) {
+  .main {
+    background-image: url('bg-intro-desktop.png');
+  }
+  .section {
+    width: 100%;
+  }
+  main {
+    padding: 8rem 15px;
+  }
+  .box2 form {
+    padding: 20px;
+  }
+  .section > p {
+    font-size: 9rem;
+    line-height: 1.6rem;
+  }
+  .section > h1 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .box1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1440px); {
+
+  .main {
+    width: 90%;
+  }
+  .section {
+    width: 100%;
+  }
+  .box2 form {
+    padding: 20px;
+  }
+  .box1 {
+    padding: 20px;
+  }
+  .section > p {
+    color: #fdf9f8;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .section form p {
+    font-size: 0.9rem;
+  }
+  .section > h1 {
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
+}
